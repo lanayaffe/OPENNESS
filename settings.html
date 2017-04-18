@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>FYP - OPENNESS UI</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+        window.onload = function(){ 
+            //Get submit button
+            var submitbutton = document.getElementById("tfq");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'search'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+    </head>
+    <body>
+        
+        <header>
+            <div id="search-header">
+                <a href="openness.html"><img src="img/logo.png" alt="Destination Logo" width="40px"/></a>
+                <form id="search-bar" method="get" action="#">
+                    <input type="text" class="search-input" size="25" maxlength="120" value="search">
+                    <input type="image" name="submit" src="img/search.png" class="search-btn">
+                </form>
+            </div>
+    
+        <div class="settings">
+                <div id="social">
+                    <h3>Connected accounts</h3>
+                    <div class="col-4">
+                    <a href="fb-profile.html"><img src="img/fb.png" alt="Facebook icon" width="50px" class="facebook-icon"/></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="twitter-profile.html"><img src="img/twit.png" alt="Twitter icon" width="50px" class="twitter-icon"/></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="linkedin-profile.html"><img src="img/linkedin.png" alt="LinkedIn icon" width="50px" class="linkedin-icon"/></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="instagram-profile.html"><img src="img/instagram.png" alt="Instagram icon" width="50px" class="instagram-icon"/></a>
+                    </div>
+                    <a href="fb-profile.html"><button type="button" id="view-profile">VIEW PROFILES</button></a>                
+                </div>
+                
+                <div id="logout">
+                    <a href="#"><button type="button" id="logout-btn">LOGOUT</button></a>
+                </div>
+            </div>
+        
+        <footer id="menu-nav" class="row">
+            <div class="col-4">
+                <a href="#"><img src="img/chat.png" alt="chat icon" width="45%"/></a>
+            </div>
+            <div class="col-4">
+                <a href="fb-profile.html"><img src="img/profile.png" alt="profile icon" width="50%"/></a>
+            </div>
+            <div class="col-4">
+                <a href="notifications.html"><img src="img/notification.png" alt="notifications icon" width="50%"/></a>
+            </div>
+            <div class="col-4">
+                <a href="settings.html"><img src="img/settings.png" alt="settings icon" width="50%"/></a>
+            </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- HELLO SODA'S CODE -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+		<title>Destination - Sign Up</title>
+
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Muli">
+        <link rel="stylesheet" type ="text/css" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://use.typekit.net/opd7osq.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>      
+		<script type="text/javascript" src="https://cdn.hellosoda.com/profile-v2/integration/js/hellosoda.js"></script>
+		
+		<!-- https://developers.google.com/web/updates/2013/12/300ms-tap-delay-gone-away?hl=en -->
+		<meta name="viewport" content="width=device-width">
+        
+        <script type="text/javascript">
+        window.onload = function(){ 
+            //Get submit button
+            var submitbutton = document.getElementById("tfq");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'search'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+
+	</head>
+
+<!-- END HELLO SODA CODE -->
+    
+	<body>
+        
+        <header style="padding: 0px;">
+            <div id="search-header">
+                <a href="index.html"><img src="img/logo.png" alt="Destination Logo" width="200px" class="logo"/></a>
+                <form id="search-bar" method="get" action="#">
+                    <input type="text" class="search-input" size="25" maxlength="120" value="search">
+                    <input type="image" name="submit" src="img/search.png" class="search-btn">
+                </form>
+            </div>
+        </header>
+
+        <div id="main-content">
+            
+            <h3>Connect with one or more of your social media accounts to sign up to Destination!</h3>
+
+<!-- HELLO SODA'S CODE -->
+            <div id="social-connect">
+                <div id="facebook_connect"></div>
+                <div id="twitter_connect"></div>
+                <div id="linkedin_connect"></div>
+                <div id="instagram_connect"></div>
+            </div>
+
+                <form id="form">
+                    <!-- todo -->
+                </form>
+
+                <a href="openness.html"><button onclick="submit()" class="done">Sign up now!</button></a>
+            </div>
+            
+        </div>
+	
+		<script type="text/javascript">
+            window.onload = function () {
+            
+			HelloSoda.init({
+				productId: '5841557793dd5d4d01e99b45',
+				buttons: true,
+				log: "debug",
+				form: '#form',
+				events: {
+					onLoad: function () {
+						console.log('loaded');
+					},
+					onDashboardActive: updateTokens,
+					onSocialProfileAvailable: updateSocialData,
+					onJobAvailable: updateCurrentJob,
+					onFieldsPrefillable: fieldsPrefillable
+				}
+			},[
+				{formfield: 'creditApplicationId', 		api: 'application_id'},
+				{formfield: 'form_firstname',           api: 'data.first_name'},
+				{formfield: 'form_lastname',            api: 'data.last_name'},
+				{formfield: 'form_birthdate',           api: 'data.birthdate'},
+				{formfield: 'form_gender',            	api: 'data.gender'},
+				{formfield: 'form_city',            	api: 'data.home.city'},
+				{formfield: 'form_employer',            api: 'data.employer'},
+				{formfield: 'form_position',            api: 'data.position'},
+				{formfield: 'form_email',            	api: 'data.contact.email'}
+			])
+
+			function updateTokens () {
+
+			}
+
+			function updateSocialData () {
+
+			}
+
+			function updateCurrentJob () {
+
+			}
+
+			function fieldsPrefillable () {
+
+			}
+
+			function submit (cb) {
+				var opts = {};
+				HelloSoda.submitJob(opts, function (res) {
+					if (res.success == true) {
+						var result = angular.copy(res.payload.data) || {};
+						result.jobId = res.job_id;
+                        window.location('/next-page.html')
+						cb(result)
+					} else {
+						cb(res);
+					}
+				});				
+			}
+                
+            }
+
+		</script>
+<!-- END HELLO SODA CODE -->
+	</body>
+
+</html>

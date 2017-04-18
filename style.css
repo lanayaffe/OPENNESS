@@ -1,0 +1,265 @@
+* {
+    font-family: 'Niveau Grotesk Medium', 'Myriad Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    border-bottom: 2px solid #eee;
+    background: #fff;
+}
+
+#main-content {
+    padding: 10px;
+    background: #f7f7f7;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+.profiles {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #eee;
+}
+
+/*SEARCH BAR*/
+
+#search-bar {
+    float: right;
+    padding: 0px 5px;
+}
+
+.search-input {
+    margin: 0;
+    width: 100px;
+    padding: 5px;
+    font-family: 'Niveau Grotesk Medium', 'Myriad Pro', sans-serif;
+    font-size: 14px;
+    color:#666;
+    background: #f7f7f7;
+    border:2px solid #158bba; 
+    border-radius: 30px;
+}
+
+.search-btn {
+    width: 20px;
+    margin: 0;
+    font-family: 'Niveau Grotesk Medium', 'Myriad Pro', sans-serif;
+    cursor: pointer;
+}
+
+/* NAV MENU */
+
+.col-4 {
+    width: 23%;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+#menu-nav {
+    background: #fff;
+    width: 100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* FACEBOOK */
+
+.col-1 {
+    width: 22%;
+    display: inline-block;
+    text-align: left;
+}
+
+.col-9 {
+    width: 75%;
+    display: inline-block;
+    text-align: left;
+    float: right;
+}
+
+.facebook-post {
+    background: #158bba;
+    width: 100%;
+    padding: 5px;
+    height: 250px;
+    margin: 5px 0px;
+}
+
+.facebook-icon {
+    width: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 14px;
+}
+
+.post {
+    background: white;
+    height: 230px;
+    padding: 5px;
+}
+
+/* TWITTER */
+
+.twitter-post {
+    background: #158bba;
+    width: 100%;
+    padding: 10px 5px;
+    height: 250px;
+    margin: 10px 0px;
+}
+
+.twitter-icon {
+    width: 50px;
+}
+
+/* ADVERTS */
+
+.ad-post {
+    background: #158bba;
+    width: 100%;
+    padding: 10px 5px;
+    height: 380px;
+    margin: 10px 0px;
+}
+
+.ad.post {
+    height: 350px;
+}
+
+/* DROPDOWN MENU */
+
+#posts-order {
+    height: 30px;
+    width: 300px;
+    font-size: 14px;
+    padding: 10px 4px;
+}
+
+.order {
+    font-size: 14px;
+    border: 1px solid #eee;
+    background: none;
+    width: 150px;
+}
+
+/* SOCIAL CONNECT */
+
+/* CONNECT BUTTONS */
+
+#facebook_connect, #twitter_connect, #linkedin_connect, #instagram_connect {
+    padding: 10px;
+}
+
+#social-connect {
+    margin: 20px 0px;
+}
+
+/* FACEBOOK */
+
+button.zocial.facebook {
+    background: #3b5998;
+    background-image: url(img/facebook.png);
+    background-size: 30px;
+    background-position: 3% 40%;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+/* TWITTER */
+
+button.zocial.twitter { 
+    background: #1da1f2;
+    background-image: url(img/twitter.png);
+    background-size: 30px;
+    background-position: 3% 40%;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+/* LINKEDIN */
+
+button.zocial.linkedin {
+    background: #0077b5;
+    background-image: url(img/linked.png);
+    background-size: 30px;
+    background-position: 3% 40%;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+/* INSTAGRAM */
+
+button.zocial.instagram {
+    background: #458eff;
+    background-image: url(img/insta.png);
+    background-size: 30px;
+    background-position: 3% 40%;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+/* END OF SOCIAL CONNECT */
+
+/* BTN */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #91d3e2;
+    color: white;
+}
+/* SETTINGS */
+
+#social {
+    text-align: center;
+}
+
+#view-profile {
+    margin: 10px 0px;
+}
+
+#logout {
+    float: right;
+}
